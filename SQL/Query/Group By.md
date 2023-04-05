@@ -10,9 +10,12 @@ Suppose we have a table "Orders" with columns "OrderID", "CustomerID", "OrderDat
 The main purpose of the GROUP BY clause is to allow us to analyze data at a higher level of abstraction. By grouping the data based on one or more columns, we can generate summary statistics and identify trends in the data
 In addition to providing summary statistics and identifying trends, the GROUP BY clause can also improve the performance of queries. By grouping the data, we can reduce the amount of data that needs to be processed by aggregate functions. This can be particularly useful when working with large tables or complex queries.
 
-Syntax : 
-( SELECT column_name(s), aggregate_function(column_name)
-FROM table_name
-WHERE condition
-GROUP BY column_name(s)
-HAVING condition ;)
+<pre>
+```sql
+SELECT column_name(s), aggregate_function(column_name) 
+FROM table_name 
+WHERE condition 
+GROUP BY column_name(s) 
+HAVING condition;
+```
+</pre>
