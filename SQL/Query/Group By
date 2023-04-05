@@ -15,4 +15,4 @@ SELECT column_name(s), aggregate_function(column_name)
 FROM table_name
 WHERE condition
 GROUP BY column_name(s)
-HAVING condition ;
+HAVING condition ;.
