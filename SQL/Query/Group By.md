@@ -1,4 +1,4 @@
-#GROUP BY
+# GROUP BY
 
 In SQL, the `GROUP BY` clause is used to group rows by one or more columns.
 
