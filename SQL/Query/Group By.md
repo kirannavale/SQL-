@@ -33,7 +33,7 @@ SELECT column_name(s)
 FROM table_name
 GROUP BY column_name(s);
 ```
-In this basic syntax, the result set is grouped by one or more columns specified in the GROUP BY clause. The columns listed in the SELECT statement must either be included in the GROUP BY clause or be used with an aggregate function.
+In this basic syntax, the result set is grouped by one or more columns specified in the `GROUP BY` clause. The columns listed in the `SELECT` statement must either be included in the `GROUP BY` clause or be used with an aggregate function.
 
 Aggregate Functions-
 ```
@@ -41,7 +41,7 @@ SELECT column_name(s), aggregate_function(column_name)
 FROM table_name
 GROUP BY column_name(s);
 ```
-When using aggregate functions, such as COUNT(), SUM(), AVG(), MAX(), or MIN(), in the SELECT statement, the result set is grouped by the column(s) specified in the GROUP BY clause. The result set includes one row per unique value in the grouped column(s), with the aggregate function applied to each group.
+When using aggregate functions, such as `COUNT()`, `SUM()`, `AVG()`, `MAX()`, or `MIN()`, in the SELECT statement, the result set is grouped by the column(s) specified in the GROUP BY clause. The result set includes one row per unique value in the grouped column(s), with the aggregate function applied to each group.
 
 ORDER BY-
 ```
@@ -50,7 +50,7 @@ FROM table_name
 GROUP BY column_name(s)
 ORDER BY column_name(s) ASC|DESC;
 ```
-You can use the ORDER BY clause to sort the result set by one or more columns, in ascending or descending order. The columns listed in the ORDER BY clause must also be included in the SELECT statement or the GROUP BY clause.
+You can use the `ORDER BY` clause to sort the result set by one or more columns, in ascending or descending order. The columns listed in the `ORDER BY` clause must also be included in the `SELECT`statement or the `GROUP BY` clause.
 
 HAVING: 
 ```
@@ -60,7 +60,7 @@ WHERE condition
 GROUP BY column_name(s)
 HAVING condition;
 ```
-The `HAVING`clause allows you to filter the result set by a condition that applies to groups, rather than individual rows. The condition specified in the HAVING clause must involve an aggregate function, and is applied after the GROUP BY clause. The WHERE clause, which filters individual rows, is applied before the GROUP BY clause.
+The `HAVING`clause allows you to filter the result set by a condition that applies to groups, rather than individual rows. The condition specified in the `HAVING` clause must involve an aggregate function, and is applied after the `GROUP BY` clause. The WHERE clause, which filters individual rows, is applied before the `GROUP BY` clause.
 
 
 `GROUP BY` clause in the presence of NULL values can lead to unexpected results. Here are some scenarios to consider:
