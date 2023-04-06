@@ -66,6 +66,8 @@ GROUP BY clause in the presence of NULL values can lead to unexpected results. H
 
 4.	NULL values in the WHERE clause: When the WHERE clause is used to filter the rows before they are grouped, any NULL values in the column being filtered on will be excluded from the result set. This can be problematic if the NULL values should be included in the grouping.
 
+To avoid these issues, it's important to carefully consider how NULL values should be handled in the context of the GROUP BY clause and to use appropriate functions like COALESCE() or ISNULL() to handle NULL values in the SELECT, HAVING, and WHERE clauses.
+
 
 
 
