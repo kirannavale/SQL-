@@ -18,6 +18,8 @@ GROUP BY clause in SQL is used for -
 5.	Analyzing trends: GROUP BY can be used to analyze trends in data over time. For example, you might use GROUP BY to group sales data by month and year, and then calculate the average sales revenue for each month and year. This can help you identify trends and patterns in the data.
 6.	Creating data subsets: GROUP BY can be used to create subsets of data based on specific criteria. For example, you might use GROUP BY to group sales data by region, and then create a subset of data that only includes sales from a specific region
 
+Syntax-
+
 Basic Syntax-
 ```
 SELECT column_name(s)
