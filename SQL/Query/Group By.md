@@ -1,3 +1,5 @@
+#GROUP BY
+
 In SQL, the `GROUP BY` clause is used to group rows by one or more columns.
 
 It is used in conjunction with aggregate functions such as `COUNT()`, `SUM()`, `AVG()`, `MAX()`, and `MIN()` to perform calculations on the grouped data.
