@@ -22,7 +22,7 @@ INSERT INTO messages (message_id, sender_id, receiver_id, content, sent_date) VA
 --Query
 
 SELECT TOP 1 sender_id, COUNT(*) AS message_count -- Select the top 1 sender_id with message_count
-FROM messages
+FROM messages          -- select data from the table
 WHERE sent_date >= '2022-08-01 00:00:00' AND sent_date < '2022-09-01 00:00:00' -- Filter messages sent in August 2022
 GROUP BY sender_id -- Group the messages by sender_id
 ORDER BY message_count DESC; -- Order the result set by message_count in descending order
@@ -81,10 +81,11 @@ INSERT INTO users (id, name, email) VALUES
 
 --Query
 
-SELECT email, COUNT(*) as count
-FROM users
-GROUP BY email
-HAVING COUNT(*) > 1;
+SELECT email, COUNT(*) as count  -- select the email column and count the number of occurrences
+FROM users  -- select data from the users table
+GROUP BY email  -- group the data by the email column
+HAVING COUNT(*) > 1;  -- only include groups where the count is greater than 1
+
 
 /*The HAVING clause will filter out any groups that only have one row, 
 leaving us with only the duplicate email addresses. */
