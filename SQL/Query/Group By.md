@@ -26,7 +26,7 @@ SELECT column_name(s)
 FROM table_name
 GROUP BY column_name(s);
 
-<pre>
+
 
 In this basic syntax, the result set is grouped by one or more columns specified in the GROUP BY clause. The columns listed in the SELECT statement must either be included in the GROUP BY clause or be used with an aggregate function.
 
