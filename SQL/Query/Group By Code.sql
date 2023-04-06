@@ -1,6 +1,6 @@
 --Example 1
 /* There is a database for a  chat history of whatsapp, where it contains the user's message history. 
-Write a query to obtain the top 1 users who have sent maximum number of  messages in month of August 2022 and display their ID’s along 
+Write a query to obtain the top 1 users who have sent maximum number of  messages in month of August 2022 and display their IDâ€™s along 
 with number of messages they send */
 
 
