@@ -21,35 +21,42 @@ FROM table_name
 ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
 
 ```
-`ORDER BY` clause in the presence of NULL values can lead to unexpected results. Here are some scenarios to consider:
+
+`ORDER BY` clause in the presence of `NULL` values can lead to unexpected results. 
 
 When sorting a result set using the ORDER BY clause in SQL, the presence of NULL values can affect the order of the results.
 
 By default, NULL values are sorted to the end of the result set in ascending order and to the beginning of the result set in descending order. This is because NULL represents the absence of a value, and therefore it cannot be compared to any other value.
 
 For example, if you have a table of employees and you want to sort them by their salaries in descending order, the query would be:
-```
+``` 
+
 SELECT employee_name, salary
 FROM employees
 ORDER BY salary DESC;
+
 ```
 
 In this case, any employee that has a NULL value for their salary will appear at the top of the result set.
 
-If you want to change this behavior and have NULL values appear first when sorting in ascending order, or last when sorting in descending order, you can use the NULLS FIRST or NULLS LAST syntax, respectively.
+If you want to change this behavior and have NULL values appear first when sorting in ascending order, or last when sorting in descending order, you can use the `NULLS FIRST` or `NULLS LAST` syntax, respectively.
 
-For example, to sort the employees by their salaries in ascending order, and have NULL values appear first, you would use the following query:
+For example, to sort the employees by their salaries in ascending order, and have `NULL` values appear first, you would use the following query:
 ```
+
 SELECT employee_name, salary
 FROM employees
 ORDER BY salary ASC NULLS FIRST;
+
 ```
-Conversely, to sort the employees by their salaries in descending order, and have NULL values appear last, you would use the following query:
+Conversely, to sort the employees by their salaries in descending order, and have `NULL` values appear last, you would use the following query:
 ```
+
 SELECT employee_name, salary
 FROM employees
 ORDER BY salary DESC NULLS LAST;
+
 ```
 
-In summary, the presence of NULL values can affect the order of the results when sorting a result set using the ORDER BY clause in SQL. By default, NULL values are sorted to the end of the result set in ascending order and to the beginning of the result set in descending order. You can use the NULLS FIRST or NULLS LAST syntax to change this behavior.
+In summary, the presence of NULL values can affect the order of the results when sorting a result set using the `ORDER BY` clause in SQL. By default, NULL values are sorted to the end of the result set in ascending order and to the beginning of the result set in descending order. You can use the `NULLS FIRST` or `NULLS LAST` syntax to change this behavior.
 
