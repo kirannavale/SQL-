@@ -4,13 +4,13 @@ In SQL, the `ORDER BY` clause is used to sort the result set returned by a SELEC
 
 Here are some reasons why `ORDER BY` is commonly used in SQL:
 
-1. To present data in a meaningful order: When querying large amounts of data, it can be difficult to understand the relationships between the different pieces of information. Sorting the results with ORDER BY can help to present the data in a more logical and intuitive order, making it easier to analyze and understand.
+1. To present data in a meaningful order: When querying large amounts of data, it can be difficult to understand the relationships between the different pieces of information. Sorting the results with `ORDER BY` can help to present the data in a more logical and intuitive order, making it easier to analyze and understand.
 
-2. To filter results: The ORDER BY clause can also be used to filter results based on specific criteria. For example, if you only want to see the top 10 highest-paid employees, you can use ORDER BY to sort the results by salary in descending order and limit the results to the first 10 rows.
+2. To filter results: The `ORDER BY` clause can also be used to filter results based on specific criteria. For example, if you only want to see the top 10 highest-paid employees, you can use ORDER BY to sort the results by salary in descending order and limit the results to the first 10 rows.
 
-3. To join tables: When joining tables, the ORDER BY clause can be used to ensure that the data is presented in a consistent and predictable order. Without an ORDER BY clause, the results may be presented in an unpredictable order, making it difficult to understand the relationships between the data.
+3. To join tables: When joining tables, the `ORDER BY` clause can be used to ensure that the data is presented in a consistent and predictable order. Without an `ORDER BY` clause, the results may be presented in an unpredictable order, making it difficult to understand the relationships between the data.
 
-In summary, the ORDER BY clause is a powerful tool that allows you to sort and filter the results of a query in a meaningful and intuitive way, making it an essential part of SQL programming.
+In summary, the `ORDER BY` clause is a powerful tool that allows you to sort and filter the results of a query in a meaningful and intuitive way, making it an essential part of SQL programming.
 
 `Syntax`-
 
