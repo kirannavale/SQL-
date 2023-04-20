@@ -88,4 +88,4 @@ HAVING COUNT(*) > 1;  -- only include groups where the count is greater than 1
 
 
 /*The HAVING clause will filter out any groups that only have one row, 
-leaving us with only the duplicate email addresses. */
+leaving us with only the duplicate email addresses. */.
